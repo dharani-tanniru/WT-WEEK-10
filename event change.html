@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Select Your Department</h2>
+    <select id="dept" onchange="displayDepartment()">
+        <option value="">Select Department</option>
+        <option value="Computer Applications">Computer Applications</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Electronics">Electronics</option>
+    </select>
+    <p id="result"></p>
+    <script>
+        function displayDepartment() {
+            let dept = document.getElementById("dept").value;
+            document.getElementById("result").innerHTML =
+                "Selected Department: " + dept;
+        }
+    </script>
+</body>
+</html>

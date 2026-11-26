@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown example</title>
+</head>
+<body>
+    <h2>select your subject</h2>
+    <select id="subject">
+        <option value="web technology">web technology</option>
+        <option value="python">python</option>
+        <option value="software engineering">software engineering</option>
+        <option value="data structure">data structure</option>
+        <option value="MFAI">MFAI</otion>
+        <option value="COOS">COOS</option>
+    </select>
+    <button onclick="showsubject()">submit</button>
+    <script>
+        function showsubject(){
+            let selected=document.getElementById("subject").value;
+            alert("Your selected subject is:"+ selected);
+        }
+    </script>
+</body>
+</html>
